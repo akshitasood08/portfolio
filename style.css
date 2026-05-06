@@ -1469,6 +1469,7 @@ body.light-mode .skills-item .dark-svg {
     position: relative;
     width: 100%;
     height: 200px;
+    aspect-ratio: 4/3;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -1816,7 +1817,10 @@ body.light-mode .skills-item .dark-svg {
      */
   
     .project-img,
-    .blog-banner-box { height: auto; }
+    .blog-banner-box { 
+      height: 200px; 
+      aspect-ratio: 4/3;
+    }
   
   }
   

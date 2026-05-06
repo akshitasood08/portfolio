@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
