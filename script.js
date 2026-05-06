@@ -36,7 +36,7 @@ function setTheme(mode) {
 if (savedTheme) {
   setTheme(savedTheme);
 } else {
-  setTheme(prefersDark ? 'dark' : 'light');
+  setTheme('dark');
 }
 
 themeToggleBtn.addEventListener('click', () => {
@@ -78,6 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function () {
       const container = btn.closest(".flip-container");
       container.classList.toggle("flipped");
+    });
+  });
+
+  // Flip back when cursor leaves the card
+  document.querySelectorAll(".flip-container").forEach(function (container) {
+    container.addEventListener("mouseleave", function () {
+      this.classList.remove("flipped");
     });
   });
 });
